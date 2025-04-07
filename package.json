@@ -1,22 +1,19 @@
 {
-  "homepage": "https://ek-coder.github.io/Traffic-Hive",
   "name": "traffichive",
-  "private": true,
   "version": "0.0.0",
+  "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "start": "vite preview --host 0.0.0.0",
+    "preview": "vite preview",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "start": "react-scripts start",
-  "build": "react-scripts build",
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d build",
-  "chart.js": "^4.4.7",
+    "chart.js": "^4.4.7",
     "framer-motion": "^10.18.0",
     "gh-pages": "^6.3.0",
     "react": "^18.2.0",
